@@ -1,0 +1,41 @@
+<!-- <div class=" p-5">
+    <div class="container">
+        <h2 class="bg-secondary-theme">Highlights</h2>
+        <p class=>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div class="row shadow-effect">
+            <div *ngFor="let article of articles" class="carde container-fluid card-body ">
+                <img [src]="article.imgUrl" class="card-img-top" alt="" height="500px" width="500px">
+                <h2>{{ article.title }}</h2>
+                <p style="color: rgb(162, 13, 21);"><strong>Author:</strong> {{ article.author }}</p>
+                
+                <!-- <p><strong>Updated:</strong> {{ article.updated }}</p> -->
+                <p>{{ article.content }}</p>
+                <p style="color: rgb(162, 13, 21);"><strong>Category:</strong> {{ article.category }}</p>
+                <hr>
+            </div>
+        </div>
+        <!-- <div class="col-md-4 mb-4">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mb-4">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mb-4">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mb-4">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mb-4">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mb-4">
+            <app-post-card></app-post-card>
+        </div> -->
+    </div>
+</div>

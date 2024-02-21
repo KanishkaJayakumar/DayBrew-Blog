@@ -1,0 +1,19 @@
+footer{   
+    padding: 15px;
+    background-color: var(--navbar-color);
+
+    margin-bottom: 20px;
+}
+
+.site-logo{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: rgba(191, 188, 188, 0.511);
+    color: var(--body-text-color);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-link{
+    color: var(--body-text-color);
+}

@@ -1,0 +1,65 @@
+<!-- <div *ngFor="let article of articles">
+    <h2>{{ article.title }}</h2>
+    <p><strong>Author:</strong> {{ article.author }}</p>
+     <p><strong>Updated:</strong> {{ article.updated }}</p>
+    <p>{{ article.content }}</p>
+    <p><strong>Category:</strong> {{ article.category }}</p>
+    <hr>
+  </div> -->
+
+<section class="featured-section absolute">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h2 class="bg-secondary-theme">Featured Posts</h2>
+                <p>Here are the few featured posts that you will find worth watching!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let article of articles" class="carde card-body shadow-effect">
+                <img [src]="article.imgUrl" class="card-img" alt="">
+                <div class="cont">
+                    <h5 style="color: rgb(162, 13, 21);">{{ article.title }}</h5>
+                    <p ><strong>Author:</strong> {{ article.author }}</p>
+
+                    <p class="shadow-effect"><strong>Category:</strong> {{ article.category }}</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+            <div class="col-lg-3">
+                <app-post-card></app-post-card>
+            </div>
+            <div class="col-lg-3">
+                <app-post-card></app-post-card>
+            </div>
+            <div class="col-lg-3">
+                <app-post-card></app-post-card>
+            </div>
+            <div class="col-lg-3">
+                <app-post-card></app-post-card>
+            </div>
+        </div> -->
+
+</section>
+
+<section class="container mt-5">
+    <div class="col-md-12 text-center">
+        <h2 class="bg-secondary-theme">Latest Posts</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="row">
+        <div *ngFor="let latest of latests" class="carde container-fluid card-body">
+            <img [src]="latest.imgUrl" class="card-img-top" alt="" height="250px" width="350px"> 
+            <h4 style="color: rgb(162, 13, 21);"> {{ latest.title }}</h4>
+            <p style="color: rgb(162, 13, 21);"><strong>Author:</strong> {{ latest.author }}</p>
+            <!-- <p><strong>Updated:</strong> {{ article.updated }}</p> -->
+            <p>{{latest.content }}</p>
+            <p><strong>Category:</strong> {{ latest.category }}</p>
+            <hr>
+        </div>
+    </div>
+</section>

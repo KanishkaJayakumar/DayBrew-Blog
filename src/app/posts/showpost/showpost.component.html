@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="card shadow-effect">
+        <div *ngFor="let post of posts" class="post-card p-4">
+          <img [src]="post.postimg" alt="Post Image" class="card-img-top img-fluid" width="400px" height="180px">
+          <div>
+            <small class="bg-light text-danger text-center">Design</small>
+            <small class="bg-light text-sucess text-center ml-5">Featured</small>
+            <small class="bg-light text-danger text-center ml-5">Views-200,4898</small>
+            <small class="bg-light text-danger text-center ml-5">LAST UPDATED - SEP 23,2023</small>
+
+            <h1 class="mt-2 mb-3">{{post.title}}</h1>
+            <h5><strong>Excerpt :</strong> {{post.excerpt}}</h5>
+            <small class="bg-light text-danger text-center ml-3">
+              CREATED ON: 31/5/2025
+              </small>
+            <p>{{post.content}}</p>
+          </div>
+        </div>
+      </div>
+      <app-comment-form></app-comment-form>
+      <app-comments-list></app-comments-list>
+    </div>
+    <div class="col-md-3">
+      <app-post-card></app-post-card>
+      <app-post-card></app-post-card>
+      <app-post-card></app-post-card>
+      <app-post-card></app-post-card>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-theme-primary">All Posts</h3>
+        <div *ngFor="let post of posts" class="post-card">
+          <h4>{{ post.title }}</h4>
+          <p>{{ post.content }}</p>
+          <p>{{post.excerpt}}</p>
+          <p>{{post.category}}</p>
+          <img [src]="post.postimg" alt="Post Image">
+
+          
+        </div>
+      </div>
+    </div>
+  </div> -->
